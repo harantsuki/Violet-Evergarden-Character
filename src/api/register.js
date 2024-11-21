@@ -12,7 +12,7 @@ const handleRegister = async (userData) => {
 
     if (response.ok) {
       const result = await response.json();
-      window.location.href = "/login";
+      window.location.hash = "/login";
       return result;
     } else {
       const errorData = await response.json();

@@ -13,7 +13,7 @@ const handleLogin = async (email, password) => {
       const token = result.token;
       localStorage.setItem("authToken", token);
       console.log(token + "Telah di simpan di local storage");
-      window.location.href = "/violet";
+      window.location.hash = "/violet";
       console.log("Login success");
       return {
         success: true,
